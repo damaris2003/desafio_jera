@@ -1,0 +1,152 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+        background-color: #f7f7f7;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #fff;
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        border-bottom: 1px solid #ccc;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      #timer {
+        font-size: 72px;
+        font-weight: bold;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      #session-toggle {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      .session-btn {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+        width: 48%;
+      }
+      .session-btn.active {
+        background-color: #333;
+        color: #fff;
+      }
+      .session-btn:focus {
+        outline: none;
+      }
+      .setting-label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      .setting-input {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 16px;
+        color: #333;
+        width: 100%;
+      }
+      .timer-btn {
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 15px 30px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        cursor: pointer;
+      }
+      .timer-btn:hover {
+        background-color: #444;
+      }
+      .timer-btn:focus {
+        outline: none;
+      }
+      #pomodoro-count {
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: center;
+      }
+    </style>
+  
+  </
+
+ 
+</head>
+  
+  <
+
+ 
+<body>
+    
+    <
+
+   
+<header>Pomodoro Timer</header>
+    
+    <
+
+   
+<div class="container">
+      
+      <
+
+     
+<div id="timer">25:00</div>
+      
+      <
+
+     
+<div id="session-toggle">
+        
+        <
+
+       
+<button class="session-btn active" id="pomodoro-btn">Pomodoro</button>
+        
+       
+<button class="session-btn" id="interval-btn">Break</button>
+      
+      </
+
+     
+</div>
+      
+      <
+
+     
+<label for="pomodoro-time" class="setting-label">Pomodoro Time (minutes)</label>
+      
+      <
+
+     
+<input type="number" id="pomodoro-time" class="setting-input" value="25">
+      
+      <
+
+     
+<label for="interval-time" class="setting-label">
