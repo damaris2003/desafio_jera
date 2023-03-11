@@ -1,4 +1,3 @@
-//define variaveis globais
 let timerInterval;
 let intervalTimerInterval;
 let pomodoroCount = 0;
